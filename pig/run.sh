@@ -114,4 +114,4 @@ fi
 echo "Starting supervisord"
 exec supervisord -n
 mysql -u root -e "create database pig"
-mysql -u root -e "pig < /var/www/html/pig/pig/database/pig.zip"
+mysql -u root pig < /var/www/html/pig/pig/database/pig.sql
